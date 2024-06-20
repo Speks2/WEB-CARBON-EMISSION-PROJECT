@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import 'components/footer';
+@import 'components/header';
+
 $color-dark-green: #006769;
 $color-olive: #40A578;
 $color-light-green: #A5DD9B;
@@ -10,31 +13,21 @@ body {
     font-weight: 400;
     font-style: normal;
     background: rgba(64, 165, 120, 1);
-    header {
-         color: blue;
-         background-color: #636363;
-         text-align: center;
-         width: 100%;
-         position: fixed;
-         top: 0;
-         left: 0;
-         background: rgba(64, 165, 120, 1);
-         h1 {
-            font-size: 5rem;
-         }
-
-    }
-    footer {
-        color: red;
-        padding: 10px;
-        text-align: center;
-        width: 100%;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        background: rgba(64, 165, 120, 1);
-
-    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; 
+        .circle {
+            h1 {
+                color: rgba(230, 255, 148, 1);
+            }
+            width: 24vw;  
+            height: 24vw; 
+            border-radius: 50%;
+            border: 3px solid rgba(230, 255, 148, 1);
+          }
+      }  
 }
 // NAVBAR 
 div nav {
@@ -67,11 +60,4 @@ div nav {
             }
         }
     }
-}
-.circle {
-    width: 24%;
-    height: 50%;
-    color: blue;
-    border-radius: 50%;
-    border: 2px solid red;
 }

@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-body {
-  font-family: "Ubuntu Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
+footer {
+  color: red;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
   background: rgb(64, 165, 120);
 }
-body header {
+
+header {
   color: blue;
   background-color: #636363;
   text-align: center;
@@ -15,18 +20,30 @@ body header {
   left: 0;
   background: rgb(64, 165, 120);
 }
-body header h1 {
+header h1 {
   font-size: 5rem;
 }
-body footer {
-  color: red;
-  padding: 10px;
-  text-align: center;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+
+body {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
   background: rgb(64, 165, 120);
+}
+body .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body .container .circle {
+  width: 24vw;
+  height: 24vw;
+  border-radius: 50%;
+  border: 3px solid rgb(230, 255, 148);
+}
+body .container .circle h1 {
+  color: rgb(230, 255, 148);
 }
 
 div nav {
@@ -55,12 +72,4 @@ div nav ul li a {
 }
 div nav ul li a:hover {
   color: #40A578;
-}
-
-.circle {
-  width: 24%;
-  height: 50%;
-  color: blue;
-  border-radius: 50%;
-  border: 2px solid red;
 }
