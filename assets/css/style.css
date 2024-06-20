@@ -3,7 +3,7 @@ body {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
   font-style: normal;
-  background-color: rgb(205, 205, 205);
+  background: rgb(64, 165, 120);
 }
 body header {
   color: blue;
@@ -13,16 +13,20 @@ body header {
   position: fixed;
   top: 0;
   left: 0;
+  background: rgb(64, 165, 120);
+}
+body header h1 {
+  font-size: 5rem;
 }
 body footer {
   color: red;
-  background-color: #626262;
   padding: 10px;
   text-align: center;
   width: 100%;
   position: fixed;
   bottom: 0;
   left: 0;
+  background: rgb(64, 165, 120);
 }
 
 div nav {
