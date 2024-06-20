@@ -56,3 +56,11 @@ div nav ul li a {
 div nav ul li a:hover {
   color: #40A578;
 }
+
+.circle {
+  width: 24%;
+  height: 50%;
+  color: blue;
+  border-radius: 50%;
+  border: 2px solid red;
+}
