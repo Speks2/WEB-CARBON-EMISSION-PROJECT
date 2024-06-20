@@ -1,12 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import 'components/footer';
-@import 'components/header';
-
-$color-dark-green: #006769;
-$color-olive: #40A578;
-$color-light-green: #A5DD9B;
-$color-yellow: #E6FF94;
-$color-white: #FFFFFF; 
+@import './components/footer.scss';
+@import './components/header.scss';
+@import './components/colorsAndFonts.scss';
 
 body {
     font-family: "Ubuntu Mono", monospace;
@@ -21,6 +15,9 @@ body {
         .circle {
             h1 {
                 color: rgba(230, 255, 148, 1);
+                margin-right: 90%; 
+                z-index: 1;
+                margin-bottom: 20vw;
             }
             width: 24vw;  
             height: 24vw; 

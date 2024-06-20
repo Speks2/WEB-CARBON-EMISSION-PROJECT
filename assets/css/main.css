@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 footer {
-  color: red;
   padding: 10px;
   text-align: center;
   width: 100%;
@@ -8,6 +8,9 @@ footer {
   bottom: 0;
   left: 0;
   background: rgb(64, 165, 120);
+}
+footer p {
+  color: #FFFFFF;
 }
 
 header {
@@ -44,6 +47,9 @@ body .container .circle {
 }
 body .container .circle h1 {
   color: rgb(230, 255, 148);
+  margin-right: 90%;
+  z-index: 1;
+  margin-bottom: 20vw;
 }
 
 div nav {
