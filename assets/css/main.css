@@ -39,13 +39,26 @@ body .container {
   align-items: center;
   height: 100vh;
 }
-body .container .circle {
-  width: 24vw;
-  height: 24vw;
+body .container div {
+  width: 30vw;
+  height: 30vw;
   border-radius: 50%;
   border: 3px solid rgb(230, 255, 148);
 }
-body .container .circle h1 {
+body .container div h1 {
+  color: rgb(230, 255, 148);
+  margin-right: 90%;
+  z-index: 1;
+  display: inline;
+  padding-right: 5rem;
+}
+body .container .circle2 {
+  width: 13vw;
+  height: 13vw;
+  border-radius: 50%;
+  border: 3px solid rgb(230, 255, 148);
+}
+body .container .circle2 h1 {
   color: rgb(230, 255, 148);
   margin-right: 90%;
   z-index: 1;

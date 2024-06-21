@@ -12,7 +12,7 @@ body {
         justify-content: center;
         align-items: center;
         height: 100vh; 
-        .circle {
+        div {
             h1 {
                 color: rgba(230, 255, 148, 1);
                 margin-right: 90%; 
@@ -20,13 +20,27 @@ body {
                 display: inline;
                 padding-right: 5rem;
             }
-            width: 24vw;  
-            height: 24vw; 
+            width: 30vw;  
+            height: 30vw; 
+            border-radius: 50%;
+            border: 3px solid rgba(230, 255, 148, 1);
+          }
+          .circle2 {
+            h1 {
+                color: rgba(230, 255, 148, 1);
+                margin-right: 90%; 
+                z-index: 1;
+                display: inline;
+                padding-right: 5rem;
+            }
+            width: 13vw;  
+            height: 13vw; 
             border-radius: 50%;
             border: 3px solid rgba(230, 255, 148, 1);
           }
       }  
 }
+
 // NAVBAR 
 div nav {
     color: $color-dark-green;
