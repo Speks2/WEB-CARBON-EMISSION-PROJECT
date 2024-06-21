@@ -12,6 +12,10 @@ body {
         justify-content: center;
         align-items: center;
         height: 100vh; 
+        .container2 {
+            background: rgba(165, 221, 155, 1);
+    
+        }
         div {
             h1 {
                 color: rgba(230, 255, 148, 1);
@@ -38,7 +42,12 @@ body {
             border-radius: 50%;
             border: 3px solid rgba(230, 255, 148, 1);
           }
-      }  
+    }  
+    
+}
+.container2 {
+    background: rgba(165, 221, 155, 1);
+
 }
 
 // NAVBAR 

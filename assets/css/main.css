@@ -39,6 +39,9 @@ body .container {
   align-items: center;
   height: 100vh;
 }
+body .container .container2 {
+  background: rgb(165, 221, 155);
+}
 body .container div {
   width: 30vw;
   height: 30vw;
@@ -64,6 +67,10 @@ body .container .circle2 h1 {
   z-index: 1;
   display: inline;
   padding-right: 5rem;
+}
+
+.container2 {
+  background: rgb(165, 221, 155);
 }
 
 div nav {
