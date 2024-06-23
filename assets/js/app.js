@@ -1,48 +1,12 @@
-const url = 'https://www.nationalgrid.com/stories/energy-explained/what-is-carbon-intensity';
-
-async function fetchHtmlContent() {
-    try {
-        const response = await fetch(url);
-
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-
-        const htmlContent = await response.text();
-        console.log(htmlContent); // This will log the HTML content of the page
-    } catch (error) {
-        console.error('Error fetching HTML content:', error);
-    }
-}
-
-const apiKey = 'https://admin.thegreenwebfoundation.org/api-docs/';
-const url = 'https://admin.thegreenwebfoundation.org/api/v1/greencheckmulti';
-
-async function fetchGreenWebData() {
-    try {
-        const response = await fetch(url, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${apiKey}` // If the API requires authentication
-            },
-            body: JSON.stringify({
-                urls: ["example.com", "anotherexample.com"]
-            })
-        });
-
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-
-        const data = await response.json();
-        console.log(data);
-    } catch (error) {
-        console.error('Error fetching data:', error);
-    }
-}
-
-fetchGreenWebData();
-
-
-fetchHtmlContent();
+fetch('https://admin.thegreenwebfoundation.org/api/v3/batch/greencheck', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ urls: ['example.com'] }) // Replace with your own URLs
+  })
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById('result').innerText = JSON.stringify(data, null, 2);
+  })
+  .catch(error => console.error('Error:', error));
